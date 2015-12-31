@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "LJRumtimeManager.h"
+#import "NSDictionary+objectForKey.h"
 
 @interface ViewController ()
 
@@ -16,11 +18,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    [LJRumtimeManager installSafeLayerForDictionaryError:NULL];
+    NSDictionary * dic = @{
+                           @"Hello":@"ok"
+                           };
+    NSLog(@"%@",[dic objectForKey:@"Hello"]);
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
 }
 
 @end

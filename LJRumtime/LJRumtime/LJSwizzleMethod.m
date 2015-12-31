@@ -6,7 +6,7 @@
 //  Copyright © 2015年 LJ. All rights reserved.
 //
 
-#import "LJSwizzMethod.h"
+#import "LJSwizzleMethod.h"
 
 #if TARGET_OS_IPHONE
 #import <objc/runtime.h>
@@ -14,8 +14,6 @@
 #else
 #import <objc/objc-class.h>
 #endif
-
-
 
 #define SETERROR(FUNC,ERROR_VAR,FORMAT,...) \
     if(ERROR_VAR){\
@@ -27,7 +25,7 @@
 
 #define SETFORMATRROR(ERROR_VAR,FORMAT,...) SETERROR(__func__,ERROR_VAR,FORMAT,##__VA_ARGS__)
 
-@implementation LJSwizzMethod
+@implementation LJSwizzleMethod
 
 + (BOOL)swizzClassInstanceMethod:(Class)class oriMethod:(SEL)ori withMethod:(SEL)dis error:(NSError **)error
 {

@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E17A820F1C32680B0051A114 /* LJRumtime.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E17A820E1C32680B0051A114 /* LJRumtime.h */; };
-		E17A821C1C326DE40051A114 /* LJSwizzMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = E17A821B1C326DE40051A114 /* LJSwizzMethod.m */; };
+		E17A821C1C326DE40051A114 /* LJSwizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = E17A821B1C326DE40051A114 /* LJSwizzleMethod.m */; };
+		E1DCC44B1C34DB3E00FBAA11 /* NSDictionary+objectForKey.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DCC44A1C34DB3E00FBAA11 /* NSDictionary+objectForKey.m */; };
+		E1DCC44E1C34DC2800FBAA11 /* LJRumtimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DCC44D1C34DC2800FBAA11 /* LJRumtimeManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,8 +29,12 @@
 /* Begin PBXFileReference section */
 		E17A820B1C32680B0051A114 /* libLJRumtime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLJRumtime.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17A820E1C32680B0051A114 /* LJRumtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJRumtime.h; sourceTree = "<group>"; };
-		E17A821A1C326DE40051A114 /* LJSwizzMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJSwizzMethod.h; sourceTree = "<group>"; };
-		E17A821B1C326DE40051A114 /* LJSwizzMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJSwizzMethod.m; sourceTree = "<group>"; };
+		E17A821A1C326DE40051A114 /* LJSwizzleMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJSwizzleMethod.h; sourceTree = "<group>"; };
+		E17A821B1C326DE40051A114 /* LJSwizzleMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJSwizzleMethod.m; sourceTree = "<group>"; };
+		E1DCC4491C34DB3E00FBAA11 /* NSDictionary+objectForKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+objectForKey.h"; sourceTree = "<group>"; };
+		E1DCC44A1C34DB3E00FBAA11 /* NSDictionary+objectForKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+objectForKey.m"; sourceTree = "<group>"; };
+		E1DCC44C1C34DC2800FBAA11 /* LJRumtimeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJRumtimeManager.h; sourceTree = "<group>"; };
+		E1DCC44D1C34DC2800FBAA11 /* LJRumtimeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJRumtimeManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +68,12 @@
 			isa = PBXGroup;
 			children = (
 				E17A820E1C32680B0051A114 /* LJRumtime.h */,
-				E17A821A1C326DE40051A114 /* LJSwizzMethod.h */,
-				E17A821B1C326DE40051A114 /* LJSwizzMethod.m */,
+				E17A821A1C326DE40051A114 /* LJSwizzleMethod.h */,
+				E17A821B1C326DE40051A114 /* LJSwizzleMethod.m */,
+				E1DCC44C1C34DC2800FBAA11 /* LJRumtimeManager.h */,
+				E1DCC44D1C34DC2800FBAA11 /* LJRumtimeManager.m */,
+				E1DCC4491C34DB3E00FBAA11 /* NSDictionary+objectForKey.h */,
+				E1DCC44A1C34DB3E00FBAA11 /* NSDictionary+objectForKey.m */,
 			);
 			path = LJRumtime;
 			sourceTree = "<group>";
@@ -124,7 +134,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E17A821C1C326DE40051A114 /* LJSwizzMethod.m in Sources */,
+				E1DCC44E1C34DC2800FBAA11 /* LJRumtimeManager.m in Sources */,
+				E17A821C1C326DE40051A114 /* LJSwizzleMethod.m in Sources */,
+				E1DCC44B1C34DB3E00FBAA11 /* NSDictionary+objectForKey.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,6 +6,7 @@
 #ifndef _LJRuntime
 #define _LJRuntime
 
-#import "NSObject+SwizzMethod.h"
+#import "LJSwizzleMethod.h"
+#import "NSDictionary+objectForKey.h"
 
 #endif

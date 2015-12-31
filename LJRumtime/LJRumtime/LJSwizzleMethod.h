@@ -1,5 +1,5 @@
 //
-//  LJSwizzMethod.h
+//  LJSwizzleMethod.h
 //  LJRumtime
 //
 //  Created by quke on 15/12/29.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface LJSwizzMethod : NSObject
+@interface LJSwizzleMethod : NSObject
 
 + (BOOL)swizzClassInstanceMethod:(Class)class oriMethod:(SEL)ori withMethod:(SEL)dis error:(NSError **)error;
 + (BOOL)swizzClassClassMethod:(Class)class oriMethod:(SEL)ori withMethod:(SEL)dis error:(NSError **)error;
