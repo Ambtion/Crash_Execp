@@ -2,7 +2,7 @@
 //  LJSwizzMethod.m
 //  LJRumtime
 //
-//  Created by quke on 15/12/29.
+//  Created by LJH on 15/12/29.
 //  Copyright © 2015年 LJ. All rights reserved.
 //
 
@@ -59,6 +59,8 @@
         SETFORMATRROR(error, @"Dis method %@ not found for class %@", NSStringFromSelector(dis), [self class]);
         return NO;
     }
+    
+    
     
     BOOL didAddMethod = class_addMethod(class, ori, method_getImplementation(disMethod), method_getTypeEncoding(disMethod));
     if (didAddMethod) {

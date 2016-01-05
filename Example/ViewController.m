@@ -2,13 +2,11 @@
 //  ViewController.m
 //  Example
 //
-//  Created by quke on 15/12/29.
+//  Created by LJH on 15/12/29.
 //  Copyright © 2015年 LJ. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "LJRumtimeManager.h"
-#import "NSDictionary+objectForKey.h"
 
 @interface ViewController ()
 
@@ -18,14 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.view.backgroundColor = [UIColor whiteColor];
-    [LJRumtimeManager installSafeLayerForDictionaryError:NULL];
-    NSDictionary * dic = @{
-                           @"Hello":@"ok"
-                           };
-    NSLog(@"%@",[dic objectForKey:@"Hello"]);
 
+//    NSArray * key = @[@"HELLO"];
+//    NSArray * value = @[@"MMMM"];
+//    NSDictionary * dic = [NSDictionary dictionaryWithObjects:value forKeys:key];
+//    NSLog(@"%@",[dic objectForKey:@"HELLO"]);
+//    NSLog(@"%@",[dic objectForKey:@"HELLO"]);
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    
 }
 
 @end

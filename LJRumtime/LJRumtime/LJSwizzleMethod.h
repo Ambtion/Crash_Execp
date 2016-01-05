@@ -2,7 +2,7 @@
 //  LJSwizzleMethod.h
 //  LJRumtime
 //
-//  Created by quke on 15/12/29.
+//  Created by LJH on 15/12/29.
 //  Copyright © 2015年 LJ. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:LJRumtime/LJRumtime.xcodeproj">
+      location = "group:LJException/LJException.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Example.xcodeproj">
