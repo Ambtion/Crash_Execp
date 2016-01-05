@@ -18,6 +18,8 @@
 + (void)startExtern
 {
     
+#ifndef DEBUG
+    
     NSArray* arr = @[@(123),@(345)];
     NSArray* arr0 = [NSArray array];
     arr0 = [NSArray array];
@@ -51,6 +53,8 @@
     [tmpM jr_swizzleMethod:@selector(replaceObjectAtIndex:withObject:) withMethod:@selector(bm_myReplaceObjectAtIndex:withObject:) error:nil];
     [tmpDM jr_swizzleMethod:@selector(setObject:forKey:) withMethod:@selector(bm_mySetObject:forKey:) error:nil];
     [tmpDic jr_swizzleMethod:@selector(objectForKey:) withMethod:@selector(objectForKeyOrNil:) error:NULL];
+
+#endif
     
 }
 
